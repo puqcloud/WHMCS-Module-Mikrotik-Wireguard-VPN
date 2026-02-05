@@ -38,7 +38,7 @@ Available options in the client panel:
 
 - - - - - -
 
->WHMCS minimal version: 8 +
+>WHMCS minimal version: 9 +
 
 >Mikrotik minimal version: 7 +
 
