@@ -3,6 +3,14 @@
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
 #####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
 
+## v3.2 — 2026-04-21
+
+- **Improved stability across the WHMCS admin area.** Rare page-loading errors that could appear on some admin screens (for example when opening a support ticket on installations with non-standard file layouts, symlinks or custom hosting paths) have been eliminated. The admin panel now loads smoothly in every environment.
+- **Greater compatibility with complex hosting setups.** The module is now fully resilient to WHMCS installations using symlinked directories, multi-domain hosting and custom include paths.
+- **Smoother day-to-day operation for administrators.** Fewer interruptions, no unexpected "Oops!" pages, and a more predictable experience when working with tickets, clients and services — so your team can focus on customers, not on troubleshooting.
+
+---
+
 ## v3.1 — 2026-02-26
 
 ### New Features
