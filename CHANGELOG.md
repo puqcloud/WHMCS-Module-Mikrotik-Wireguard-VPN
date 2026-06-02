@@ -3,6 +3,14 @@
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
 #####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
 
+## v3.2.1 — 2026-06-01
+
+- **Full compatibility with the latest Mikrotik RouterOS 7.21.4.** The module has been tested and certified against RouterOS 7.21.4, so you can confidently run the newest firmware on your routers without any provisioning hiccups.
+- **Rock-solid REST API connections.** Resolved rare cases where requests to the router could stall and time out, leaving operations hanging. Account creation, suspension, statistics collection and status checks now complete instantly and reliably.
+- **Snappier, more dependable automation.** With every API call responding without delay, day-to-day provisioning and billing run faster and smoother — fewer retries, no stuck tasks, and a more responsive experience for both your team and your customers.
+
+---
+
 ## v3.2 — 2026-04-21
 
 - **Improved stability across the WHMCS admin area.** Rare page-loading errors that could appear on some admin screens (for example when opening a support ticket on installations with non-standard file layouts, symlinks or custom hosting paths) have been eliminated. The admin panel now loads smoothly in every environment.
