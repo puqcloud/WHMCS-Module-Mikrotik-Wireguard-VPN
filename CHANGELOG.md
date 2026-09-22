@@ -1,7 +1,22 @@
 # Changelog
 
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
-#####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
+
+## v4.0.0 — 2026-09-22
+
+- **WireGuard Simple Queue and metric collection fix.** Resolved router 404 errors caused by slashes (`%2F`) in Base64 public keys in REST API paths by introducing `apiFindQueue()` with dedicated IP (`target=.../32`) and query-parameter lookups. Queue deletion and counter resets are now executed reliably via internal RouterOS `.id`.
+- **Atomic traffic statistics collection.** Replaced read-modify-write logic with atomic SQL increments (`Capsule::raw`) in `StatisticsSaveTraffic()`, eliminating race conditions and traffic data loss during concurrent WHMCS cron jobs and metric queries.
+- **WHMCS Usage Billing MetricProvider fix.** Resolved zero-traffic reporting so that `Usage(0.0)` is reliably returned when usage is 0 GB, preventing "No usage data" statuses in WHMCS.
+- **Human-readable Transfer RX & TX units.** Replaced raw byte integers in the client area with dynamically formatted units (`B`, `KB`, `MB`, `GB`, `TB`) with 2-decimal precision.
+- **Admin API connection timeout and performance optimization.** Enforced a strict 15-second timeout on router status checks and removed early blocking API calls from constructor, eliminating admin panel delays and cron execution lags.
+- **PHP 7.4 & PHP 8.x compatibility.** Resolved syntax compatibility issues across PHP 7.4 through PHP 8.4.
+- **ionCube 15 & PHP 8.2+ architectural upgrade.** Transitioned `hooks.php` to an unencoded lightweight bootstrap delegating logic to `lib/puqMikrotikWireGuardVPNHooks.php` for seamless ionCube 15 compatibility.
+- **Automated usage cleanup on termination.** Local usage statistics in `puqMikrotikWireGuardVPN_statistics` are now automatically purged when a service is terminated.
+- **Enhanced Client Area UI.** Integrated standard PUQ client area UI toolkit with `header.tpl`, QR code rendering, dynamic config download, copy-to-clipboard, CSRF protection, and streamlined layout.
+- **Legacy configuration fallback.** Added transparent backward compatibility for products migrating from older configuration schemas.
+
+---
 
 ## v3.2.1 — 2026-06-02
 

@@ -1,7 +1,7 @@
 # Description
 
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
-#####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
 
 ## PUQ Mikrotik WireGuard VPN — WHMCS Server Module
 
@@ -12,16 +12,16 @@
 ## Key Features
 
 - **Automatic WireGuard VPN provisioning** — create and deploy VPN accounts on Mikrotik routers automatically
-- **Full lifecycle management** — suspend, unsuspend, terminate, and change packages
-- **Mikrotik REST API only** — communicates via Mikrotik REST API (RouterOS 7+)
+- **Full lifecycle management** — create, suspend, unsuspend, terminate, and change packages
+- **Mikrotik REST API only** — communicates exclusively via Mikrotik REST API (RouterOS 7+) with 15s connection timeout protection
 - **Bandwidth speed limits** — configurable upload/download speed limits per product using Mikrotik Simple Queues
 - **Private and public IP support** — assign IPs from a configurable pool per server
-- **Metric billing** — usage-based billing for incoming and outgoing traffic (GB)
-- **WireGuard configuration export** — text and QR code formats for easy client setup
-- **VPN connection status monitoring** — real-time endpoint, handshake, and transfer info
-- **VPN interface reboot** — reset frozen connections from client or admin area
-- **Traffic statistics** — daily and monthly traffic charts with Google Charts (can be disabled per product)
-- **Multilingual interface** — 25 languages: Arabic, Azerbaijani, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Farsi, French, German, Hebrew, Hungarian, Italian, Macedonian, Norwegian, Polish, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
+- **Metric billing** — post-paid usage-based billing for incoming and outgoing traffic (GB) via standard WHMCS MetricProvider
+- **WireGuard configuration export** — text and dynamic QR code formats with one-click `.conf` file download
+- **VPN connection status monitoring** — real-time endpoint, handshake, and transfer statistics dynamically formatted in human-readable units (B, KB, MB, GB, TB)
+- **Reset VPN Interface** — disconnect and reset frozen connections from client or admin area
+- **Atomic traffic statistics** — daily and monthly traffic charts with Google Charts, backed by atomic database increments (can be disabled per product)
+- **Multilingual interface** — 26 languages: Arabic, Azerbaijani, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Farsi, French, German, Hebrew, Hungarian, Italian, Macedonian, Norwegian, Polish, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
 - **Custom links** — configurable links to setup instructions and VPN client downloads in client area
 
 ---
@@ -31,7 +31,7 @@
 - Create / Suspend / Unsuspend / Terminate users
 - Change package (update bandwidth limits and WireGuard interface)
 - VPN connection status and peer information
-- VPN interface reboot function
+- Reset VPN Interface function
 - Text and QR code configuration display
 - Metric Billing (Bandwidth Usage Download/Upload in GB)
 
@@ -39,22 +39,22 @@
 
 ## Available Options in the Client Panel
 
-- VPN connection status (endpoint, handshake, RX/TX)
+- VPN connection status (endpoint, handshake, RX/TX in human-readable units)
 - Text and QR code configuration with download button
-- VPN interface reboot function
+- Reset VPN Interface function
 - Traffic statistics with daily and monthly charts
 - Links to user manual and VPN client downloads
 
 ---
 
-## System Requirements
+## System requirements
 
 | Requirement | Minimum |
 |-------------|---------|
-| **WHMCS** | 9.x+ |
-| **PHP** | 8.2+ |
-| **ionCube Loader** | v13 or newer (v14, v15) |
-| **Mikrotik RouterOS** | 7+ |
+| **WHMCS** | 8.x+, 9.x+ |
+| **PHP** | 7.4, 8.1, 8.2, 8.3, 8.4 |
+| **ionCube Loader** | v15+ |
+| **Mikrotik RouterOS** | 7.x+ |
 
 ---
 
@@ -67,7 +67,31 @@
 
 ## Links
 
-- **Product page:** [https://puqcloud.com/](https://puqcloud.com/)
+- **Product page:** [https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php)
 - **Documentation:** [https://doc.puq.info/books/mikrotik-wireguard-vpn-whmcs-module](https://doc.puq.info/books/mikrotik-wireguard-vpn-whmcs-module)
 - **Support:** [https://puqcloud.com/submitticket.php](https://puqcloud.com/submitticket.php?step=2&deptid=1)
 - **Community:** [https://community.puqcloud.com/](https://community.puqcloud.com/)
+
+---
+
+## Screenshots
+
+### Client area — Overview
+
+![Client area overview](img/client-area-overview.png)
+*client-area-overview.png*
+
+### Client area — Traffic statistics
+
+![Traffic statistics](img/traffic-statistics.png)
+*traffic-statistics.png*
+
+### Client area — Usage metrics
+
+![Usage metrics](img/client-area-metrics.png)
+*client-area-metrics.png*
+
+### Admin area — Product information
+
+![Admin area product information](img/admin-product-info.png)
+*admin-product-info.png*

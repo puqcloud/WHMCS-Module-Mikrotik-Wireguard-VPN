@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b1120;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161c33;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0b1120;stop-opacity:1" />
+    </linearGradient>
+    <!-- Accent Top Line Gradient -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.6"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="180" cy="150" r="120" fill="#2563eb" opacity="0.16" />
+  <circle cx="180" cy="150" r="80" fill="#3b82f6" opacity="0.18" />
+
+  <!-- LEFT: Illustration (Centered around X=180, Y=150) -->
+  <g transform="translate(180, 150) scale(1.4)">
+    <g transform="translate(-50, -55)">
+      <!-- Shield outline -->
+      <path d="M50 5 L90 20 L90 60 Q90 95 50 110 Q10 95 10 60 L10 20 Z"
+            fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+      <!-- Shield inner fill -->
+      <path d="M50 12 L83 25 L83 58 Q83 88 50 102 Q17 88 17 58 L17 25 Z"
+            fill="#3b82f6" opacity="0.15"/>
+      <!-- Lock/key icon inside shield -->
+      <circle cx="50" cy="48" r="12" fill="none" stroke="#60a5fa" stroke-width="2"/>
+      <rect x="42" y="56" width="16" height="18" rx="3" fill="#3b82f6" opacity="0.4" stroke="#60a5fa" stroke-width="1.5"/>
+      <circle cx="50" cy="65" r="3" fill="#93c5fd"/>
+      <!-- Connection dots -->
+      <circle cx="30" cy="35" r="2.5" fill="#60a5fa" opacity="0.8"/>
+      <circle cx="70" cy="35" r="2.5" fill="#60a5fa" opacity="0.8"/>
+      <line x1="32" y1="35" x2="44" y2="45" stroke="#60a5fa" stroke-width="1.2" opacity="0.5"/>
+      <line x1="68" y1="35" x2="56" y2="45" stroke="#60a5fa" stroke-width="1.2" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- CENTER: Text Content -->
+  <g transform="translate(360, 45)">
+    <!-- Subtitle Category -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#60a5fa" letter-spacing="3">WHMCS SERVER MODULE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="82" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffffff">MIKROTIK WIREGUARD VPN</text>
+
+    <!-- Divider Line -->
+    <rect x="0" y="102" width="500" height="3" fill="url(#accent)" rx="1.5"/>
+
+    <!-- Key Bullet Points -->
+    <g transform="translate(0, 130)">
+      <!-- Bullet 1 -->
+      <circle cx="6" cy="6" r="4" fill="#3b82f6"/>
+      <text x="20" y="10" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1" font-weight="500">
+        Automated WireGuard VPN provisioning via Mikrotik REST API
+      </text>
+
+      <!-- Bullet 2 -->
+      <circle cx="6" cy="34" r="4" fill="#3b82f6"/>
+      <text x="20" y="38" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1" font-weight="500">
+        Bandwidth limits, IP pools &amp; real-time metric traffic billing
+      </text>
+
+      <!-- Bullet 3 -->
+      <circle cx="6" cy="62" r="4" fill="#3b82f6"/>
+      <text x="20" y="66" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1" font-weight="500">
+        Self-service client area with QR codes &amp; one-click configuration
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT: Branding & Badge -->
+  <!-- Divider -->
+  <line x1="930" y1="40" x2="930" y2="260" stroke="#334155" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <g transform="translate(970, 75)">
+    <!-- PUQ Software Branding -->
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="#2563eb">PUQ</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#94a3b8" letter-spacing="2">SOFTWARE</text>
+
+    <!-- Verified Badge -->
+    <g transform="translate(0, 95)">
+      <rect x="0" y="0" width="165" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <!-- Checkmark Circle -->
+      <circle cx="22" cy="19" r="10" fill="#22c55e"/>
+      <polyline points="17,19 20,22 27,15" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="38" y="17" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#93c5fd">MARKETPLACE</text>
+      <text x="38" y="29" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">VERIFIED MODULE</text>
+    </g>
+  </g>
+</svg>

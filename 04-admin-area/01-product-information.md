@@ -1,13 +1,12 @@
 # Product Information
 
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
-#####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
 
 The admin service management page provides a comprehensive view of each VPN service instance.
 
-![Admin area - Product information](../img/02-admin-product-info.png)
-
-*Admin area product information screen*
+![Admin area - Product information](../img/admin-product-info.png)
+*admin-product-info.png*
 
 ---
 

@@ -1,7 +1,7 @@
 # Setup Guide: Mikrotik Preparation and Configuration
 
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
-#####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
 
 ## Prerequisites
 
@@ -86,9 +86,8 @@ You can do this via Winbox or WebFig:
 4. Set the **Listen Port** (e.g., `13231`)
 5. Enable the interface
 
-![Mikrotik WireGuard server setup](../img/07-mikrotik-wireguard-setup.png)
-
-*WireGuard interface configuration in Mikrotik WebFig*
+![Mikrotik WireGuard server setup](../img/mikrotik-wireguard-setup.png)
+*mikrotik-wireguard-setup.png*
 
 ---
 

@@ -1,7 +1,7 @@
 # Add Server (Router Mikrotik) in WHMCS
 
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
-#####  [Order now](https://puqcloud.com/store/whmcs-module-mikrotik-wireguard-vpn) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [FAQ](https://community.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
 
 Navigate to **System Settings > Servers > Add New Server** in WHMCS admin area.
 
@@ -20,9 +20,8 @@ In the **Assigned IP Addresses** field, enter a list of IP addresses that will b
 
 These IPs will be assigned to WireGuard peers as their tunnel addresses. The module automatically allocates the first available (unused) IP from this pool for each new service.
 
-![WHMCS Server - Assigned IP Addresses](../img/08-whmcs-server-ips.png)
-
-*Enter the list of IP addresses for VPN clients*
+![WHMCS Server - Assigned IP Addresses](../img/whmcs-server-ips.png)
+*whmcs-server-ips.png*
 
 ---
 
@@ -33,9 +32,8 @@ These IPs will be assigned to WireGuard peers as their tunnel addresses. The mod
 3. Set the **port** (default: `443` for HTTPS REST API)
 4. Check the **Secure** checkbox if using HTTPS (recommended)
 
-![WHMCS Server Details](../img/09-whmcs-server-details.png)
-
-*Server connection settings with module selection*
+![WHMCS Server Details](../img/whmcs-server-details.png)
+*whmcs-server-details.png*
 
 ---
 
@@ -52,4 +50,4 @@ A successful connection will confirm that:
 
 ## Next Steps
 
-After adding the server, proceed to [Product Configuration in WHMCS](../03-installation-and-configuration/04-product-configuration.md).
+After adding the server, proceed to [Product Configuration in WHMCS](../03-installation-and-configuration/02-product-configuration.md).
