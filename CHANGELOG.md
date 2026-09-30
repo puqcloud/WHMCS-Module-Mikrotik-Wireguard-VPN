@@ -3,6 +3,16 @@
 ### Mikrotik WireGuard VPN module **[WHMCS](https://puqcloud.com/link.php?id=77)**
 #####  [Order now](https://puqcloud.com/whmcs-module-mikrotik-wireguard-vpn.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-Mikrotik-WireGuard-VPN/) | [Community](https://community.puqcloud.com/)
 
+## v4.1.0 — 2026-09-30
+
+- **Fault-Tolerant Cron & Usage Tracking.** Daily usage updates and metric harvesting tasks in WHMCS automation are now strictly isolated per WireGuard service. Any momentary network loss or unreachable router will be safely logged without interrupting the synchronization of remaining customer accounts.
+- **PHP 8.x Type Safety Hardening.** Thoroughly hardened typed property handling across bandwidth and package limits, preventing `TypeError` exceptions on PHP 8.1, 8.2, and 8.3 environments.
+- **Zero-Touch Settings Auto-Migration.** Existing WireGuard products configured on legacy schemas automatically upgrade their settings into modern unified parameters (`configoption24`) upon product saving, ensuring smooth maintenance.
+- **Enhanced Select2 & WHMCS 9 Admin UX.** Upgraded dynamic settings panel detection to guarantee instant and reliable form reactivity across WHMCS 9 and Select2 interfaces.
+- **Clean Module Logging.** Excluded local database license verification checks (`License_Verification (db)`) from the WHMCS Module Log, recording exclusively online verification calls to keep diagnostic logs clean.
+
+---
+
 ## v4.0.0 — 2026-09-22
 
 - **WireGuard Simple Queue and metric collection fix.** Resolved router 404 errors caused by slashes (`%2F`) in Base64 public keys in REST API paths by introducing `apiFindQueue()` with dedicated IP (`target=.../32`) and query-parameter lookups. Queue deletion and counter resets are now executed reliably via internal RouterOS `.id`.
